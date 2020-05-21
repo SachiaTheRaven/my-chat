@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, CSSProperties } from "react";
 import { ConversationDto } from "./chat";
 import { proxy } from "./Proxy";
 import { TextInputAndButton } from "./TextInputAndButton";
@@ -7,8 +7,9 @@ import { MessageCard } from "./MessageCard";
 export class RightPane extends Component<{ conversation?: ConversationDto, onBack: () => void }>
 {
     render() {
+        const longStyle:CSSProperties={height:'100%'}
         return (
-            <div className="right-pane column">
+            <div className="right-pane column" style={longStyle}>
                 {this.props.conversation &&
                     <>
                         <div className="conversation-header row">

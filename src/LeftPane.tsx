@@ -1,4 +1,4 @@
-import React,{ Component } from "react";
+import React,{ Component, CSSProperties } from "react";
 import { InboxDto, ConversationDto } from "./chat";
 import { TextInputAndButton } from "./TextInputAndButton";
 import { proxy } from "./Proxy";
@@ -10,8 +10,9 @@ export class LeftPane extends Component<{
 }>
 {
     render() {
+        const longStyle:CSSProperties={height:'100%'}
         return (
-            <div className="left-pane">
+            <div className="left-pane" style={longStyle}>
                 <p className="my-tag">My tag: {this.props.inbox.user.tag}</p>
                 <TextInputAndButton type="text" placeholder="Add user by Tag (Name#123)"
                     buttonContent="Inv"
