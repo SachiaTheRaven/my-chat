@@ -9,7 +9,7 @@ export class Main extends Component {
     render() {
         const longStyle:CSSProperties={height:'100%'}
 
-        let className = "main row " + (this.state.selectedConversation ? "right" : "left");
+        let className = "main row" + (this.state.selectedConversation ? "right" : "left");
         return (
             <div className={className} style={longStyle}>
                 <LeftPane
