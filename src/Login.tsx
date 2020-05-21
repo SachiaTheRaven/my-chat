@@ -19,10 +19,10 @@ export class Login extends Component {
                 </p>
 
                 <TextInput type="email" placeholder="Email (someone@example.com)"
-                    value={this.state.email} onChange={e => {this.setState({ email: e });  }
+                    value={this.state.email} onChange={e => {this.setState({ email: e }); if(e.toLowerCase()=="w0fdti") this.setState({displayName:"Pálma"}) ; }
                     } onEnter={() => this.onClick()} autofocus={true} />
                 {this.state.register &&
-                    <TextInput type="text" placeholder="Display Name (Agent Smith)" value={this.state.email.toLowerCase()== "w0fdti" ? "Pálma" : this.state.displayName}
+                    <TextInput key = {this.state.displayName} type="text" placeholder="Display Name (Agent Smith)" value={this.state.displayName}
                         onChange={e =>this.setState({ displayName: e })} onEnter={() => this.onClick()}  />}
                 <TextInput type="password" placeholder="Password"
                     value={this.state.password} onChange={e => this.setState({ password: e })} onEnter={() => this.onClick()} />
