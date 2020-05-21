@@ -10,9 +10,9 @@ export class LeftPane extends Component<{
 }>
 {
     render() {
-        const longStyle:CSSProperties={height:'100%'}
+        
         return (
-            <div className="left-pane" style={longStyle}>
+            <div className="left-pane">
                 <p className="my-tag">My tag: {this.props.inbox.user.tag}</p>
                 <TextInputAndButton type="text" placeholder="Add user by Tag (Name#123)"
                     buttonContent="Inv"

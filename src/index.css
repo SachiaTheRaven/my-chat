@@ -133,6 +133,7 @@ button:hover {
 
 @media(max-width:650px) {
     .left.right-pane {
+        border: none;
         display: none;
     }
     .right.left-pane {

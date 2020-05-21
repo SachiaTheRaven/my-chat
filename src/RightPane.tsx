@@ -7,9 +7,9 @@ import { MessageCard } from "./MessageCard";
 export class RightPane extends Component<{ conversation?: ConversationDto, onBack: () => void }>
 {
     render() {
-        const longStyle:CSSProperties={height:'100%'}
+        
         return (
-            <div className="right-pane column" style={longStyle}>
+            <div className="right-pane column">
                 {this.props.conversation &&
                     <>
                         <div className="conversation-header row">
