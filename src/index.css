@@ -134,6 +134,7 @@ button:hover {
 @media (max-width: 650px) {
     .left .right-pane {
         display: none;
+        border: none;
     }
     .right .left-pane {
         display: none;
